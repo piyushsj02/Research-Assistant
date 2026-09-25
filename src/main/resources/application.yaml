@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: research-assistant
+
+gemini:
+  api:
+    url: https://generativelanguage.googleapis.com/v1beta/interactions?key=
+    key: ${GEMINI_KEY}
