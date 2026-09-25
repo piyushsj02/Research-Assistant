@@ -144,7 +144,7 @@ This endpoint accepts a JSON request body with:
 curl -X POST http://localhost:8080/api/research \
   -H "Content-Type: application/json" \
   -d '{
-    "content": "Machine learning is a branch of artificial intelligence that builds systems capable of learning from data and improving over time.",
+    "content": ""Avul Pakir Jainulabdeen Abdul Kalam (/ˈʌbdʊl kəˈlɑːm/ ⓘ UB-duul kə-LAHM; 15 October 1931 – 27 July 2015) was an Indian aerospace engineer and science administrator who served as president of India from 2002 to 2007. The Government of India honoured him with the Padma Bhushan in 1981 and the Padma Vibhushan in 1990.[2] In 1997, he was awarded India's highest civilian honour, the Bharat Ratna, for his contribution to the scientific research and modernisation of defence technology in India.[3] Born and raised in a Muslim family in Rameswaram, Tamil Nadu, Kalam studied physics and aerospace engineering. He spent the next four decades as a scientist and science administrator, mainly at the Defence Research and Development Organisation (DRDO) and Indian Space Research Organisation (ISRO) and was intimately involved in India's civilian space programme and military missile development efforts. He is popularly known as the Missile Man of India for his work on the development of ballistic missile and launch vehicle technology. He also played a pivotal organisational, technical, and political role in Pokhran-II nuclear tests in 1998, India's second such test after the first test in 1974.Kalam was elected as the president of India in 2002 with the support of both the ruling Bharatiya Janata Party and the then-opposition Indian National Congress. He was widely referred to as the People's President. He engaged in teaching, writing and public service after his presidency. Kalam is known as Missile Man of India. While delivering a lecture at IIM Shillong, Kalam collapsed and died from an apparent cardiac arrest on 27 July 2015, aged 83. Thousands attended the funeral ceremony held in his hometown of Rameswaram, where he was buried with full state honours. A memorial was inaugurated near his home town in 2017.",
     "operation": "summarize"
   }'
 ```
@@ -152,7 +152,7 @@ curl -X POST http://localhost:8080/api/research \
 ### Example response
 
 ```json
-"Machine learning allows systems to learn patterns from data and improve over time without explicit programming for every task."
+"A.P.J. Abdul Kalam was an Indian aerospace engineer and science administrator who served as the president of India from 2002 to 2007. Popularly known as the "Missile Man of India," he spent four decades at DRDO and ISRO playing a vital role in India's space program, missile development, and the 1998 Pokhran-II nuclear tests, which earned him the Bharat Ratna. Referred to as the "People's President," he dedicated his post-presidency to teaching, writing, and public service until his death in 2015."
 ```
 
 ## Supported Operations
