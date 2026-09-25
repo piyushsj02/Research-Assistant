@@ -26,23 +26,23 @@ public class ResearchService {
 
 
     public String getResearch(ResearchRequest request) {
-        // Build the prompt
+
         String prompt = buildPrompt(request);
 
-        // Query the AI Model API
         Map<String, Object> requestBody = Map.of(
                 "model", "gemini-3.8-flash",
                 "input", prompt
         );
+
         String response = webClient.post()
-                .uri(geminiApiUrl + geminiApiKey)
+                .uri(geminiApiUrl)
+                .header("x-goog-api-key", geminiApiKey)
+                .header("Content-Type", "application/json")
                 .bodyValue(requestBody)
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
 
-        // Parse response
-        // Return response
         return extractTextFromResponse(response);
     }
 

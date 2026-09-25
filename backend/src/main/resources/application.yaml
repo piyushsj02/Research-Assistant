@@ -4,5 +4,5 @@ spring:
 
 gemini:
   api:
-    url: https://generativelanguage.googleapis.com/v1beta/interactions?key=
+    url: https://generativelanguage.googleapis.com/v1beta/interactions
     key: ${GEMINI_KEY}
